@@ -1,0 +1,30 @@
+#error
+{
+    display: none;
+    width: 22em;
+
+    margin-top: 1em;
+    padding: 5px;
+
+    border: 1px solid #f00;
+    border-radius: 10px;
+
+    color: #f00;
+    background-color: #fcc;
+}
+
+#board
+{
+    display: block;
+    position: absolute;
+    left: 400px;
+    top: 0;
+
+    width: 400px;
+    height: 400px;
+
+    margin-top: 0;
+
+    border: 1px solid #000;
+    background-color: #000;
+}

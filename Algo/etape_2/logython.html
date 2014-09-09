@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Logython</title>
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="logython.js"></script>
+        <script src="anim.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("button").click(function () {
+                    try 
+                    {
+                        $("#error").hide();
+                        var result = parser.parse($("textarea").val());
+                        result = result.replace("\n", "<br />\n");
+                        $("#error").html(result);
+                        $("#error").show();
+                    } 
+                    catch (e) 
+                    {
+                        $("#error").html(String(e));
+                        $("#error").show();
+                    }
+                });
+            });
+        </script>
+            <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <textarea rows="10" cols="30"></textarea>
+        <button>Exécute</button>
+        <div id="error"></div>
+        <canvas id="board"></canvas>
+    </body>
+</html>

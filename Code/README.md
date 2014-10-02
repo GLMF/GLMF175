@@ -1,6 +1,6 @@
-# Approche détaillée des futex
+# Approche détaillée des futex (partie 2/4)
 par Rachid Koucha [Ingénieur développement logiciel @ Alcatel-Lucent]
 
 ---
 
-Après avoir vu le fonctionnement des futex dans le noyau de Linux, ce troisième opus de la série revient sur l'interface utilisateur de l'appel système qui propose de nombreuses options pour résoudre les problèmes régulièrement rencontrés dans les systèmes multi-thread.
+Après un premier opus sur la notion de futex, ce second article aborde la face cachée du concept de futex dans la mesure où il donne un point de vue détaillée des traitements réalisés au sein du noyau de Linux. Cette connaissance permet d'utiliser les futex de manière efficace et robuste.
